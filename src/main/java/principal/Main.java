@@ -1,11 +1,12 @@
 package principal;
 
+import estruturas.Fila;
 import estruturas.Pilha;
 
 public class Main {
     public static void main(String[] args) {
 
-       Pilha pilhaJogos = new Pilha();
+        Pilha pilhaJogos = new Pilha();
 
         pilhaJogos.adicionarInicio("god of war");
         pilhaJogos.adicionarInicio("pes");
@@ -20,5 +21,24 @@ public class Main {
         pilhaJogos.mostrarJogos();
 
         System.out.println("Numero de jogos: "+pilhaJogos.quantidadeItens());
+
+        System.out.println("-------------------------------------------------");
+
+        Fila filaPessoas = new Fila();
+
+        filaPessoas.adicionarFinal("Ana Carolina");
+        filaPessoas.adicionarFinal("Samantha Ferreira");
+        filaPessoas.adicionarFinal("Gabriel Lima");
+        filaPessoas.adicionarFinal("Pedro Silva");
+        filaPessoas.mostrarFila();
+
+        System.out.println("Numero de pessoas: "+filaPessoas.quantidadeItens());
+
+        filaPessoas.removerInicio();
+        filaPessoas.removerInicio();
+        filaPessoas.mostrarFila();
+
+        System.out.println("Numero de pessoas: "+filaPessoas.quantidadeItens());
+
     }
 }
