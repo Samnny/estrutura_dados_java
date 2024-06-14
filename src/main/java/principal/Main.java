@@ -1,5 +1,6 @@
 package principal;
 
+import estruturas.Deque;
 import estruturas.Fila;
 import estruturas.Pilha;
 
@@ -40,5 +41,15 @@ public class Main {
 
         System.out.println("Numero de pessoas: "+filaPessoas.quantidadeItens());
 
+        System.out.println("-------------------------------------------------");
+
+        Deque dequeJogos = new Deque();
+        dequeJogos.adicionarInicio("Uno");
+        dequeJogos.adicionarInicio("Lol");
+        dequeJogos.adicionarFinal("Baralho");
+        dequeJogos.mostrarItens();
+        dequeJogos.removerInicio();
+        dequeJogos.removerFinal();
+        dequeJogos.mostrarItens();
     }
 }
