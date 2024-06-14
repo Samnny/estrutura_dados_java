@@ -1,5 +1,4 @@
-package org.example;
-
+package estruturas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +17,18 @@ public class Pilha {
         this.tamanho++;
     }
 
-    public void mostrarItens(){
+    public void mostrarJogos(){
         for (String item : this.pilha){
             System.out.println("Nome do jogo: "+item);
         }
+    }
+
+    public int quantidadeItens(){
+        return this.tamanho;
+    }
+
+    public void removerInicio(){
+        this.pilha.removeFirst();
+        this.tamanho--;
     }
 }
