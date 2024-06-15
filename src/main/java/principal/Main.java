@@ -2,6 +2,7 @@ package principal;
 
 import estruturas.Deque;
 import estruturas.Fila;
+import estruturas.ListaLigada;
 import estruturas.Pilha;
 
 public class Main {
@@ -51,5 +52,18 @@ public class Main {
         dequeJogos.removerInicio();
         dequeJogos.removerFinal();
         dequeJogos.mostrarItens();
+
+        System.out.println("-------------------------------------------------");
+
+        ListaLigada listaLigada = new ListaLigada();
+        listaLigada.adicionarInicio("thiago silva");
+        listaLigada.adicionarFinal("avenida marcelo");
+        listaLigada.adicionarInicio("chorão");
+        listaLigada.adicionarPosicao("casa grande",2);
+        listaLigada.mostrarItens();
+        listaLigada.removerInicio();
+        listaLigada.removerPosicao(1);
+        listaLigada.adicionarFinal("Menino Ney");
+        listaLigada.mostrarItens();
     }
 }
